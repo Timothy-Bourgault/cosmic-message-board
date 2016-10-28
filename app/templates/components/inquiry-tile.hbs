@@ -1,0 +1,11 @@
+<li>
+{{#if isImageShowing }}
+  <p><img src={{inquiry.image}} alt={{inquiry.question}} ></p>
+{{else}}
+    <button>Show Image</button>
+{{/if}}
+</li>
+<li>~Inquiry: {{inquiry.question}}</li>
+<li>~Author: {{inquiry.author}}</li>
+<li>~From The {{inquiry.system}}</li>
+<li>~Notes: {{inquiry.notes}}</li>

@@ -1,0 +1,15 @@
+<h1>Welcome To The Cosmic Message Board!!!</h1>
+
+<h2>The answers to all of existence await you inside...</h2>
+<hr>
+
+<ul>
+  {{#each model as |inquiry|}}
+    {{inquiry-tile inquiry=inquiry}}
+    <hr>
+  {{/each}}
+</ul>
+
+
+{{#link-to 'about'}}>> Learn More About Cosmic Message Board{{/link-to}}<br>
+{{#link-to 'contact'}}>> Contact The Cosmic Ambassadors{{/link-to}}
