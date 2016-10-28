@@ -1,0 +1,35 @@
+body{
+  background-color: black;
+}
+jumbotron {
+  background-color: black;
+}
+h1 {
+  font-family: 'Bungee Hairline', cursive;
+  color: Black;
+}
+#title {
+  font-size: 4em;
+  text-align: center;
+  color: white;
+}
+h2 {
+  font-family: 'Audiowide', cursive;
+  text-align: center;
+  color: white;
+}
+
+.alien {
+  font-family: 'Khmer', cursive;
+  color: white;
+}
+
+li {
+  font-family: 'Megrim', cursive;
+  color: white;
+}
+
+label {
+  font-family: 'Stalinist One', cursive;
+  color: white;
+}
