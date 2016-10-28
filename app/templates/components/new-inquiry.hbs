@@ -1,5 +1,35 @@
 {{#if addNewInquiry}}
-  <p>Display new inquiry form - to be replaced with form soon.</p>
+<h1>Add A New Inquiry To The Board</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="image">Image</label>
+      {{input value=image id="image"}}
+    </div>
+
+    <div class="form-group">
+      <label for="question">Image</label>
+      {{input value=question id="question"}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Image</label>
+      {{input value=author id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="system">Image</label>
+      {{input value=system id="system"}}
+    </div>
+
+    <div class="form-group">
+      <label for="notes">Image</label>
+      {{input value=notes id="notes"}}
+    </div>
+
+    <button {{action 'saveInquiry'}}>Save</button>
+  </form>
+</div>
 {{else}}
   <button {{action 'inquiryFormShow'}}>New Inquiry</button>
-{{/if}}  
+{{/if}}
