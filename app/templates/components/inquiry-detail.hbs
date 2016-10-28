@@ -1,0 +1,9 @@
+<h2>This cosmic inquiry was written by {{inquiry.author}} from The {{inquiry.system}}.  They would like to add to their inquiry the following note to help: {{inquiry.notes}}</h2>
+<br>
+{{#if isImageShowing }}
+  <p><img src={{inquiry.image}} alt={{inquiry.question}} {{action 'imageHide'}}></p>
+{{else}}
+  <button {{action 'imageShow'}}>Show Image</button>
+{{/if}}
+
+<button {{action 'delete' inquiry}}>Delete</button>

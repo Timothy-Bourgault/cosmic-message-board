@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     saveInquiry() {
       var params = {
         image: this.get('image') ? this.get('image') : "",
-        city: this.get('question') ? this.get('question') : "",
+        question: this.get('question') ? this.get('question') : "",
         author: this.get('author') ? this.get('author') : "",
         system: this.get('system') ? this.get('system') : "",
         notes: this.get('notes') ? this.get('notes') : "",

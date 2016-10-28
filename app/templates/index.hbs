@@ -5,12 +5,9 @@
 
 <ul>
   {{#each model as |inquiry|}}
-    {{inquiry-tile inquiry=inquiry destroyInquiry="destroyInquiry"}}
+    {{inquiry-tile inquiry=inquiry}}
     <hr>
   {{/each}}
 </ul>
 
 {{new-inquiry saveInquiry="saveInquiry"}}
-
-{{#link-to 'about'}}>> Learn More About Cosmic Message Board{{/link-to}}<br>
-{{#link-to 'contact'}}>> Contact The Cosmic Ambassadors{{/link-to}}

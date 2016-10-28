@@ -1,7 +1,42 @@
-<h1 id="title">Cosmic Message Board</h1>
+<div class="container">
+  <header class="jumbotron">
+    <h1 id="title">Cosmic Message Board</h1>
+  </header>
+</div>
+<div id="pictureCarousel" class="carousel slide jumbotron">
+  <div class="container">
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#picturesCarousel" data-slide-to="0"></li>
+      <li data-target="#picturesCarousel" data-slide-to="1"></li>
+      <li data-target="#picturesCarousel" data-slide-to="2"></li>
+      <li data-target="#picturesCarousel" data-slide-to="3"></li>
+      <li data-target="#picturesCarousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner centerImg">
+      <div class="item active centerImg">
+        <img class="images carouselImg" src="https://thenypost.files.wordpress.com/2014/09/bear1.jpg?quality=90&strip=all&w=664&h=441&crop=1" alt="Grizzly Bear waving hello" />
+      </div>
+      <div class="item centerImg">
+        <img class="images carouselImg" src="/img/bee.jpg" alt="A bee" />
+      </div>
+      <div class="item centerImg">
+        <img class="images carouselImg" src="/img/boom.jpg" alt="A bomb" />
+      </div>
+      <div class="item centerImg">
+        <img class="images carouselImg" src="/img/flowers.jpg" alt="Sunflowers" />
+      </div>
+      <div class="item centerImg">
+        <img class="images carouselImg" src="/img/star.jpg" alt="A colorful star" />
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#pictureCarousel" data-slide="prev"></a>
+        <span class="icon-prev"></span>
+  <a class="right carousel-control" href="#pictureCarousel" data-slide="next"></a>
+  <span class="icon-next"></span>
+</div>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -9,13 +44,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">CMB</a>
+      <a class="navbar-brand" href="#">CMB Home</a>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sectors<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -36,11 +68,14 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://localhost:4200">Home<span class="sr-only"></span></a></li>
         <li><a href="http://localhost:4200/about">About<span class="sr-only"></span></a></li>
         <li><a href="http://localhost:4200/contact">Contact</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 {{outlet}}
+<footer>
+  {{#link-to 'about'}}>> Learn More About Cosmic Message Board{{/link-to}}<br>
+  {{#link-to 'contact'}}>> Contact The Cosmic Ambassadors{{/link-to}}
+</footer>
