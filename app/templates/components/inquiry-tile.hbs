@@ -1,11 +1,12 @@
 <li>
 {{#if isImageShowing }}
-  <p><img src={{inquiry.image}} alt={{inquiry.question}} ></p>
+  <p><img src={{inquiry.image}} alt={{inquiry.question}} {{action 'imageHide'}}></p>
 {{else}}
-    <button>Show Image</button>
+  <button {{action 'imageShow'}}>Show Image</button>
 {{/if}}
 </li>
-<li>~Inquiry: {{inquiry.question}}</li>
-<li>~Author: {{inquiry.author}}</li>
-<li>~From The {{inquiry.system}}</li>
-<li>~Notes: {{inquiry.notes}}</li>
+<li>~ Inquiry: {{inquiry.question}}</li>
+<li>~ Author: {{inquiry.author}}</li>
+<li>~ From The {{inquiry.system}}</li>
+<li>~ Notes: {{inquiry.notes}}</li>
+<button {{action 'delete' inquiry}}>Delete Inquiry</button>
