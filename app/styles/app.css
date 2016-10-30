@@ -1,37 +1,69 @@
 body{
-  background-color: black;
+  background-color: white;
 }
-jumbotron {
-  background-color: black;
+.jumbotron {
+  color: grey;
+  background-color: white;
 }
 h1 {
   font-family: 'Bungee Hairline', cursive;
   color: Black;
 }
 #title {
-  font-size: 4em;
+  font-size: 6em;
+  font-style: strong;
   text-align: center;
-  color: white;
+  color: #0c49ad;
 }
 h2 {
   font-family: 'Audiowide', cursive;
   text-align: center;
-  color: white;
+  color: black;
+}
+
+.centerImg {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+#shorter {
+  position: relative;
+  height: 60%;
+  width: 100%;
+}
+
+.carouselImg {
+  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .alien {
   font-family: 'Khmer', cursive;
-  color: white;
+  color: black;
+}
+
+#brand {
+  font-family: 'Megrim', cursive;
+  font-size: 3em;
 }
 
 li {
   font-family: 'Megrim', cursive;
-  color: white;
+  color: black;
+  list-style: none;
+  font-size: 3em;
+}
+
+.footer {
+  font-family: 'Megrim', cursive;
+  color: black;
   list-style: none;
   font-size: 3em;
 }
 
 label {
   font-family: 'Stalinist One', cursive;
-  color: white;
+  color: black;
 }
