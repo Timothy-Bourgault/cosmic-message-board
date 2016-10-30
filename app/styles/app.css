@@ -27,6 +27,8 @@ h2 {
 li {
   font-family: 'Megrim', cursive;
   color: white;
+  list-style: none;
+  font-size: 3em;
 }
 
 label {
