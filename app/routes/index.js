@@ -12,11 +12,6 @@ export default Ember.Route.extend({
       var newInquiry = this.store.createRecord('inquiry', params);
       newInquiry.save();
       this.transitionTo('index');
-    },
-    saveAntwoord(params) {
-      var newAntwoord = this.store.createRecord('antwoord', params);
-      newAntwoord.save();
-      this.transitionTo('index');
     }
   }
 });

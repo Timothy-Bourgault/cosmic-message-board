@@ -1,5 +1,7 @@
-<h2>More information about {{model.author}}'s inquiry</h2>
+<h2>More information about {{model.author}}'s inquiry</h2><hr>
 
 {{update-inquiry inquiry=model update="update"}}
 
 {{inquiry-detail inquiry=model destroyInquiry="destroyInquiry"}}
+
+{{new-antwoord saveAntwoord="saveAntwoord" inquiry=model}}

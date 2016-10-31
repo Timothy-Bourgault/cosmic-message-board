@@ -6,4 +6,5 @@ export default DS.Model.extend({
   author: DS.attr(),
   system: DS.attr(),
   notes: DS.attr(),
+  antwoord: DS.hasMany('antwoord', { async: true })
 });

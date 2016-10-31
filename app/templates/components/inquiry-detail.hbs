@@ -1,9 +1,18 @@
-<h2>This cosmic inquiry was written by {{inquiry.author}} from The {{inquiry.system}}.  They would like to add to their inquiry the following note to help: {{inquiry.notes}}</h2>
+<h2>
+~ {{inquiry.question}}
+</h2>
 <br>
+<h2>This cosmic inquiry was written by {{inquiry.author}} from The {{inquiry.system}}.  They would like to add to their inquiry the following note to help: {{inquiry.notes}}</h2>
+<button {{action 'delete' inquiry}}>Delete Inquiry</button>
 {{#if isImageShowing }}
   <p><img src={{inquiry.image}} alt={{inquiry.question}} {{action 'imageHide'}}></p>
 {{else}}
   <button {{action 'imageShow'}}>Show Image</button>
 {{/if}}
-
-<button {{action 'delete' inquiry}}>Delete</button>
+<hr>
+<h2>Antwoords:</h2>
+<ul>
+  {{#each inquiry.antwoords as |antwoord|}}
+    {{antwoord-tile antwoord=antwoord}}
+  {{/each}}
+</ul>

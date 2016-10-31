@@ -12,12 +12,3 @@
 
 {{new-inquiry saveInquiry="saveInquiry"}}
 <hr>
-<h2>Cosmic Community Antwoords:</h2>
-<hr>
-<ul>
-  {{#each model.antwoords as |antwoord|}}
-    <li>{{antwoord.rating}} - {{antwoord.content}} - by {{antwoord.author}}</li><hr>
-  {{/each}}
-</ul>
-
-{{new-antwoord saveAntwoord="saveAntwoord"}}
