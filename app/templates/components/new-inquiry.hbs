@@ -1,35 +1,44 @@
 {{#if addNewInquiry}}
 <h1>Add A New Inquiry To The Board</h1>
-<div>
-  <form>
-    <div class="form-group">
-      <label for="image">Image</label>
-      {{input value=image id="image"}}
-    </div>
+<div class="container">
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4">
+    <form>
+      <div class="form-group">
+        <label class="pull-right" for="image">Image</label>
+        {{input value=image id="image"}}
+      </div>
 
-    <div class="form-group">
-      <label for="question">Inquiry</label>
-      {{input value=question id="question"}}
-    </div>
+      <div class="form-group">
+        <label class="pull-right" for="question">Inquiry</label>
+        {{input value=question id="question"}}
+      </div>
 
-    <div class="form-group">
-      <label for="author">Author</label>
-      {{input value=author id="author"}}
-    </div>
+      <div class="form-group">
+        <label class="pull-right" for="author">Author</label>
+        {{input value=author id="author"}}
+      </div>
 
-    <div class="form-group">
-      <label for="system">System</label>
-      {{input value=system id="system"}}
-    </div>
+      <div class="form-group">
+        <label class="pull-right" for="system">System</label>
+        {{input value=system id="system"}}
+      </div>
 
-    <div class="form-group">
-      <label for="notes">Notes</label>
-      {{input value=notes id="notes"}}
-    </div>
+      <div class="form-group">
+        <label class="pull-right" for="notes">Notes</label>
+        {{input value=notes id="notes"}}
+      </div>
 
-    <button {{action 'saveInquiry'}}>Save</button>
-  </form>
+      <button class="btn btn-success btn-lg pull-right" {{action 'saveInquiry'}}>Save</button>
+    </form>
+  </div>
+  <div class="col-sm-4">
+  </div>
 </div>
 {{else}}
-  <button {{action 'inquiryFormShow'}}>New Inquiry</button>
+<div class="ctrBtn">
+  <button class="btn btn-success btn-lg" {{action 'inquiryFormShow'}}>Add A New Inquiry</button>
+</div>
+
 {{/if}}

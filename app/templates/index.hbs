@@ -1,13 +1,21 @@
 <h1>Welcome To The Cosmic Message Board!!!</h1>
 
-<h2>The answers to all of existence await you inside...</h2>
+<h2>Your answer awaits you in within this construct...</h2>
 <hr>
-
+<h2>The Board</h2>
+<hr>
 <ul>
-  {{#each model as |inquiry|}}
+  {{#each model.inquiries as |inquiry|}}
     {{inquiry-tile inquiry=inquiry}}
-    <hr>
   {{/each}}
 </ul>
 
 {{new-inquiry saveInquiry="saveInquiry"}}
+<hr>
+<h2>Cosmic Community Antwoords:</h2>
+<hr>
+<ul>
+  {{#each model.antwoords as |antwoord|}}
+    <li>{{antwoord.rating}} - {{antwoord.content}} - by {{antwoord.author}}</li><hr>
+  {{/each}}
+</ul>
