@@ -1,9 +1,9 @@
 {{#if addNewInquiry}}
 <h1>Add A New Inquiry To The Board</h1>
 <div class="container">
-  <div class="col-sm-4">
+  <div class="col-sm-3">
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-6">
     <form>
       <div class="form-group">
         <label class="pull-right" for="image">Image</label>
@@ -30,10 +30,10 @@
         {{input value=notes id="notes"}}
       </div>
 
-      <button class="btn btn-success btn-lg pull-right" {{action 'saveInquiry'}}>Save</button>
+      <button class="btn btn-danger btn-lg pull-right" {{action 'saveInquiry'}}>Save</button>
     </form>
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-3">
   </div>
 </div>
 {{else}}

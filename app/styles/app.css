@@ -14,7 +14,7 @@ body{
 }
 
 input {
-  width: 70%;
+  width: 80%;
 }
 
 #inquiry {
@@ -62,8 +62,7 @@ h2 {
 }
 
 .ctrBtn {
-  text-align: right;
-  margin-right: 4em;
+  text-align: center;
 }
 
 .alien {
