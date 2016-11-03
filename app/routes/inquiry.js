@@ -19,7 +19,7 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     saveAntwoord(params) {
-      var newAntwoord = this.store.createRecord('antwoords', params);
+      var newAntwoord = this.store.createRecord('antwoord', params);
       var inquiry = params.inquiry;
       inquiry.get('antwoords').addObject(newAntwoord);
       newAntwoord.save().then(function() {
