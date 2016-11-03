@@ -17,6 +17,10 @@ input {
   width: 80%;
 }
 
+.ctrContact {
+  text-align: center;
+}
+
 #inquiry {
   color: black;
 }
