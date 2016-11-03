@@ -19,8 +19,20 @@ body{
   text-align: center;
 }
 
+#updateBtn {
+  margin-left: 2em;
+}
+
+#deleteBtn {
+  margin-left: 2em;
+}
+
 input {
   width: 80%;
+}
+
+#showImgBtn{
+  margin-right: 2em;
 }
 
 .ctrContact {
@@ -28,7 +40,11 @@ input {
 }
 
 #inquiry {
-  color: black;
+  color: lightblue;
+}
+
+#formIndent{
+  margin-left: 9em;
 }
 
 hr {
@@ -113,5 +129,6 @@ li {
 
 label {
   font-family: 'Stalinist One', cursive;
-  color: black;
+  color: lightblue;
+  text-align: center;
 }

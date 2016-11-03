@@ -1,6 +1,6 @@
 {{#if updateInquiryForm}}
-<h1>Update {{inquiry.author}}'s inquiry</h1>
-<div>
+<h1 class="lightenUp">Update {{inquiry.author}}'s inquiry</h1>
+<div id="formIndent">
   <form>
     <div class="form-group">
       <label for="image">Image</label>
@@ -27,9 +27,9 @@
       {{input value=notes id="notes" placeholder=inquiry.notes}}
     </div>
 
-    <button {{action 'update' inquiry}}>Save Update</button>
+    <button class="btn btn-success"{{action 'update' inquiry}}>Save Update</button>
   </form>
 </div>
 {{else}}
-  <button {{action 'updateInquiryForm'}}>Update Inquiry</button>
+  <button id="updateBtn" class="btn btn-warning"{{action 'updateInquiryForm'}}>Update Inquiry</button>
 {{/if}}

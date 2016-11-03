@@ -3,11 +3,11 @@
 </h2>
 <br>
 <h2>This cosmic inquiry was written by {{inquiry.author}} from The {{inquiry.system}}.  They would like to add to their inquiry the following note to help: {{inquiry.notes}}</h2>
-<button {{action 'delete' inquiry}}>Delete Inquiry</button>
+<button id="deleteBtn"{{action 'delete' inquiry}} class="btn btn-danger">Delete Inquiry</button>
 {{#if isImageShowing }}
   <p><img src={{inquiry.image}} alt={{inquiry.question}} {{action 'imageHide'}}></p>
 {{else}}
-  <button {{action 'imageShow'}}>Show Image</button>
+  <button id="showImgBtn" {{action 'imageShow'}} class="pull-right btn btn-info">Show Image</button>
 {{/if}}
 <hr>
 <h2>Antwoords:</h2>
