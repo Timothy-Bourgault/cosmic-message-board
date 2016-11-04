@@ -7,19 +7,33 @@
     <form>
       <div class="form-group">
         <label class="pull-right" for="author">Author</label>
-        {{input value=author id="author"}}
+        {{input class="form-control" value=author id="author"}}
       </div>
 
-      <div class="form-group">
+    `  <!-- <div class="form-group">
         <label class="pull-right" for="rating">Rating</label>
         {{input value=rating id="rating"}}
-      </div>
+      </div> -->`
 
       <div class="form-group">
         <label class="pull-right" for="content">Content</label>
-        {{input value=content id="content"}}
+        {{input class="form-control" value=content id="content"}}
       </div>
-
+      <br>
+      <div class="form-group">
+        <label class="pull-right" for="rating">Rating</label>
+        <select class="form-control" onchange={{action 'saveRating' value="target.value"}}>
+          <option class="moonOption" value="1">🌚 </option>
+          <option class="moonOption" value="2">🌚 🌒</option>
+          <option class="moonOption" value="3">🌚 🌒 🌓</option>
+          <option class="moonOption" value="4">🌚 🌒 🌓 🌔</option>
+          <option class="moonOption" value="5" selected>🌚 🌒 🌓 🌔 🌝</option>
+          <option class="moonOption" value="6">🌚 🌒 🌓 🌔 🌝 🌖</option>
+          <option class="moonOption" value="7">🌚 🌒 🌓 🌔 🌝 🌖 🌗</option>
+          <option class="moonOption" value="8">🌚 🌒 🌓 🌔 🌝 🌖 🌗 🌘</option>
+          <option class="moonOption" value="9">🌚 🌒 🌓 🌔 🌝 🌖 🌗 🌘 🌚</option>
+        </select>
+      </div>
       <button class="btn btn-success btn-lg pull-right" {{action 'saveAntwoord'}}>Save</button>
     </form>
   </div>
