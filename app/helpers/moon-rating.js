@@ -1,34 +1,34 @@
 import Ember from 'ember';
 
-export function moonRating(params) {
-  var params = parseInt(params);
+export function moonRating(rating) {
+  var params = parseInt(rating);
   var moons = "<p>";
   if (params === 1) {
-    moons == '🌚';
+    moons += '🌚';
   }
   else if (params === 2) {
-    moons == '🌚 🌒';
+    moons += '🌚 🌒';
   }
   else if (params === 3) {
-    moons == '🌚 🌒 🌓';
+    moons += '🌚 🌒 🌓';
   }
   else if (params === 4) {
-    moons == '🌚 🌒 🌓 🌔';
+    moons += '🌚 🌒 🌓 🌔';
   }
   else if (params === 5) {
-    moons == '🌚 🌒 🌓 🌔 🌝';
+    moons += '🌚 🌒 🌓 🌔 🌝';
   }
   else if (params === 6) {
-    moons == '🌚 🌒 🌓 🌔 🌝 🌖';
+    moons += '🌚 🌒 🌓 🌔 🌝 🌖';
   }
   else if (params === 7) {
-    moons == '🌚 🌒 🌓 🌔 🌝 🌖 🌗';
+    moons += '🌚 🌒 🌓 🌔 🌝 🌖 🌗';
   }
   else if (params === 8) {
-    moons == '🌚 🌒 🌓 🌔 🌝 🌖 🌗 🌘';
+    moons += '🌚 🌒 🌓 🌔 🌝 🌖 🌗 🌘';
   }
-  else (params === 9) {
-    moons == '🌚 🌒 🌓 🌔 🌝 🌖 🌗 🌘 🌚';
+  else if (params === 9) {
+    moons += '🌚 🌒 🌓 🌔 🌝 🌖 🌗 🌘 🌚';
   }
   moons += '</p>';
   return Ember.String.htmlSafe(moons);
