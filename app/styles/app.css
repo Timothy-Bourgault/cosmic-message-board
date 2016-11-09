@@ -1,10 +1,10 @@
 body{
-  background-color: white;
-  /*background-image: url(http://www.narrowbandimaging.com/images/vdb142_S2HaO3.jpg);
+  /*background-color: white;*/
+  background-image: url(http://www.narrowbandimaging.com/images/vdb142_S2HaO3.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
 }
 .jumbotron {
   color: grey;

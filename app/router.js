@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('inquiry', {path: '/inquiry/:inquiry_id'});
+  this.route('favorites');
 });
 
 export default Router;
