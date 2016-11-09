@@ -3,8 +3,9 @@
   <hr>
   <ul>
     {{#each favoriteAntwoords.antwoords as |antwoord|}}
-      <li id="antwoords">Cosmic Moon Rating: {{moon-rating antwoord.rating}} Answer: {{antwoord.content}}<br> By: {{antwoordAuthor}}<br><br></li>
+      {{antwoord-tile antwoord=antwoord}}
     {{/each}}
   </ul>
 </div>
+
 {{yield}}
