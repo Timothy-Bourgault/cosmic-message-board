@@ -10,9 +10,30 @@
   <button id="showImgBtn" {{action 'imageShow'}} class="pull-right btn btn-info">Show Image</button>
 {{/if}}
 <hr>
-<h2>Antwoords:</h2>
-<ul>
-  {{#each inquiry.antwoords as |antwoord|}}
-    {{antwoord-tile antwoord=antwoord}}
-  {{/each}}
-</ul>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="pageSeperator">
+        <h2>Antwoords:</h2>
+        <hr>
+        <ul>
+          {{#each inquiry.antwoords as |antwoord|}}
+            {{antwoord-tile antwoord=antwoord}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="pageSeperator">
+        <h2>Favorite Antwoords</h2>
+        <hr>
+        <ul>
+          {{#each favoriteAntwoords.antwoords as |antwoord|}}
+            <li id="antwoords">Cosmic Moon Rating: {{moon-rating antwoord.rating}} Answer: {{antwoord.content}}<br> By: {{antwoordAuthor}}<br><br></li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

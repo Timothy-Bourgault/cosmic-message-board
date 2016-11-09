@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  favoriteAntwoords: Ember.inject.service(),
   isImageShowing: false,
   actions: {
     delete(inquiry) {

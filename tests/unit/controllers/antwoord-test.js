@@ -1,12 +1,12 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('service:favoirite-antwoords', 'Unit | Service | favoirite antwoords', {
+moduleFor('controller:antwoord', 'Unit | Controller | antwoord', {
   // Specify the other units that are required for this test.
-  // needs: ['service:foo']
+  // needs: ['controller:foo']
 });
 
 // Replace this with your real tests.
 test('it exists', function(assert) {
-  let service = this.subject();
-  assert.ok(service);
+  let controller = this.subject();
+  assert.ok(controller);
 });

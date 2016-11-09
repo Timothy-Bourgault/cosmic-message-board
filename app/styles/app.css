@@ -112,6 +112,15 @@ p {
   font-size: 3em;
 }
 
+.pageSeperator{
+	margin-top:10px;
+	border: black medium solid;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+  padding-right: 2em;
+}
+
 li {
   font-family: 'Megrim', cursive;
   color: orange;
