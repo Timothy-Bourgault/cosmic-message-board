@@ -1,4 +1,10 @@
-{{#each favoriteAntwoords.antwoords as |antwoord|}}
-  <li id="antwoords">Cosmic Moon Rating: {{moon-rating antwoord.rating}} Answer: {{antwoord.content}}<br> By: {{antwoordAuthor}}<br><br></li>
-{{/each}}
+<div class="pageSeperator">
+  <h2>Favorite Antwoords</h2>
+  <hr>
+  <ul>
+    {{#each favoriteAntwoords.antwoords as |antwoord|}}
+      <li id="antwoords">Cosmic Moon Rating: {{moon-rating antwoord.rating}} Answer: {{antwoord.content}}<br> By: {{antwoordAuthor}}<br><br></li>
+    {{/each}}
+  </ul>
+</div>
 {{yield}}

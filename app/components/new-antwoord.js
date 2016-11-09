@@ -7,7 +7,7 @@ export default Ember.Component.extend({
     antwoordFormShow() {
       this.set('addNewAntwoord', true);
     },
-    saveAntwoord(inquiry) {
+    saveAntwoord() {
       var params = {
         firstname: this.get('firstname') ? this.get('firstname') : "",
         lastname: this.get('lastname') ? this.get('lastname') : "",
