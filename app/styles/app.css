@@ -120,6 +120,14 @@ li {
   text-align: center;
 }
 
+#antwoords {
+  font-family: 'Megrim', cursive;
+  color: orange;
+  list-style: none;
+  font-size: 2em;
+  text-align: center;
+}
+
 .footer {
   font-family: 'Megrim', cursive;
   color: black;
