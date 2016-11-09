@@ -9,15 +9,17 @@ export default Ember.Component.extend({
     },
     saveAntwoord(inquiry) {
       var params = {
-        author: this.get('author') ? this.get('author') : "",
+        firstname: this.get('firstname') ? this.get('firstname') : "",
+        lastname: this.get('lastname') ? this.get('lastname') : "",
         content: this.get('content') ? this.get('content') : "",
         rating: this.get('rating') ? this.get('rating') : "",
-        inquiry: inquiry
+        inquiry: this.get('inquiry')
       };
       this.set('rating', 5);
       this.set('addNewAntwoord', false);
       this.sendAction('saveAntwoord', params);
-      this.set('author', '');
+      this.set('firstname', '');
+      this.set('lastname', '');
       this.set('content', '');
     },
     saveRating(value) {

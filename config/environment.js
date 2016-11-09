@@ -14,10 +14,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyBYTRZYQy1gbSbqn3-uVJ5b-ZUKErBz8R4",
-      authDomain: "cosmic-message-board.firebaseapp.com",
-      databaseURL: "https://cosmic-message-board.firebaseio.com",
-      storageBucket: "cosmic-message-board.appspot.com"
+      apiKey: "AIzaSyDwOYVlcJP8204oFx7MY6_oi61Us-rxeIk",
+      authDomain: "cosmic-message-board-continued.firebaseapp.com",
+      databaseURL: "https://cosmic-message-board-continued.firebaseio.com",
+      storageBucket: "cosmic-message-board-continued.appspot.com"
     },
 
     APP: {
